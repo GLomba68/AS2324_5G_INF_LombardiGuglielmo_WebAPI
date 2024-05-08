@@ -11,8 +11,8 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
             return View();
         }
 
-        [HttpGet("Getmultiplointero")]
-        public JsonResult Getmultiplointero(int num, int factor)
+        [HttpGet("multiplointero")]
+        public JsonResult multiplointero(int num, int factor)
         {
 
             if(factor % num == 0)
@@ -33,8 +33,8 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
             return Json(new { output = $"Il valore dell' ipotenusa è : " + Math.Sqrt((cateto1 * cateto1) + (cateto2 * cateto2)) , status = "OK" });
         }
 
-        [HttpGet("Getpotenza")]
-        public JsonResult Getpotenza(int b, int esponente)
+        [HttpGet("potenza")]
+        public JsonResult potenza(int b, int esponente)
         {
             int risultato = b;
             for (int i = 1; i<esponente;i++)
