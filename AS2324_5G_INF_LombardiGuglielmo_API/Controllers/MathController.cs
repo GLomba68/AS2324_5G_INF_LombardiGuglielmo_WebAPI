@@ -9,13 +9,20 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
             return View();
         }
 
-        
+        [HttpGet("GetMultiplo")]
+        public JsonResult GetMultiplo(int num, int factor)
+        {
 
-        
-
-
+            
 
 
         }
+
+
+
+
+
+
+    }
     }
 }
