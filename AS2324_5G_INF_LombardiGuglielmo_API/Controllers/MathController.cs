@@ -21,7 +21,7 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
             }
             else
             {
-                return Json(new { output = $"Il numero inserito ({num}) NON È multiplo del secondo numero inserito ({factor})", status = "OK" });
+                return Json(new { output = $"Il numero inserito ({num}) NON È multiplo del secondo numero inserito ({factor})", status = "KO" });
             }
 
 
@@ -54,7 +54,7 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
             }
             else
             {
-                return Json(new { output = $"L'anno solare {anno} NON È bisestile", status = "OK" });
+                return Json(new { output = $"L'anno solare {anno} NON È bisestile", status = "KO" });
             }
 
 
