@@ -27,8 +27,8 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
 
         }
 
-        [HttpGet("Getipotenusa")]
-        public JsonResult Getipotenusa(double cateto1, double cateto2)
+        [HttpGet("ipotenusa")]
+        public JsonResult ipotenusa(double cateto1, double cateto2)
         {
             return Json(new { output = $"Il valore dell' ipotenusa è : " + Math.Sqrt((cateto1 * cateto1) + (cateto2 * cateto2)) , status = "OK" });
         }
