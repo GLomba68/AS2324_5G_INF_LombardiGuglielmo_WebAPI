@@ -26,7 +26,7 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
         }
 
         [HttpGet("Getipotenusa")]
-        public JsonResult Getipotenusa(int num, int factor)
+        public JsonResult Getipotenusa(double cateto1, double cateto2)
         {
 
             
