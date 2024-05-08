@@ -9,8 +9,8 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
             return View();
         }
 
-        [HttpGet("GetMultiplo")]
-        public JsonResult GetMultiplo(int num, int factor)
+        [HttpGet("Getmultiplointero")]
+        public JsonResult Getmultiplointero(int num, int factor)
         {
 
             if(num % factor == 0)
@@ -32,4 +32,4 @@ namespace AS2324_5G_INF_LombardiGuglielmo_API.Controllers
 
     }
     }
-}
+
